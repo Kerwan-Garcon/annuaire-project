@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
@@ -13,4 +17,36 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.color-step-col-1 tr:nth-child(2n + 1) {
+  background-color: #787e86;
+  color: #d4d3d3;
+}
+.color-step-col-1 tr:nth-child(2n + 1):hover {
+  background-color: #d4d3d3;
+  color: #787e86;
+  cursor: pointer;
+}
+.color-step-col-2 tr:nth-child(2n + 0) {
+  background-color: #2f4858;
+  color: #bab8b8;
+}
+.color-step-col-2 tr:nth-child(2n + 0):hover {
+  background-color: #bab8b8;
+  color: #2f4858;
+  cursor: pointer;
+}
+.max-w-little {
+  max-width: 125px;
+}
+.max-w-medium {
+  max-width: 225px;
+}
+.max-w-large {
+  max-width: 375px;
+}
+
+.truncate-none:hover {
+  text-overflow: inherit;
 }
